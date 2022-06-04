@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+        <title>Laboratório JavaScript – Parte 01</title>
+    </head>
+    <body>
+        <style>
+            section {
+                margin-bottom: 60px;
+            }
+        </style>
+        <div class="container-fluid">
+            <div class="row flex-xl-nowrap">
+                <div class="col-md-3 col-xl-2 bd-sidebar">
+                    <div class="collapse d-md-block row" id="bd-docs-nav"></div>
+                </div>
+
+                <main class="col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content" role="main">
+                    <section class="questao1">
+                        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
+                            <span>Laboratório JavaScript – Parte 01</span>
+                            <h1 class="bd-title">Questão 1</h1>
+                        </div>
+                        <p class="bd-lead">Faça um programa que entre com cinco números e imprima o quadrado decada número. <strong>Use recursos de programação funcional </strong> </p>
+
+
+
+                        <div class="wrap d-md-flex flex-md-row align-items-center justify-content-between">
+                            <input type="number" placeholder="1 numero">
+                            <input type="number" placeholder="2 numero">
+                            <input type="number" placeholder="3 numero">
+                            <input type="number" placeholder="4 numero">
+                            <input type="number" placeholder="5 numero">
+                        </div>
+
+                        <hr>
+                        <button class="btn btn-lg btn-success">Calcular</button>
+                    </section>
+
+                    <section class="questao2">
+                        <div class="d-md-flex flex-md-row align-items-center justify-content-between">
+
+                            <h1 class="bd-title">Questão 2</h1>
+                        </div>
+                        <p class="bd-lead">Peça ao usuário para digitar várias idades. Exiba quantas pessoas são maior de idade (18 anos) e quantas são menores.</p>
+
+                        <div class="d-md-flex flex-md-row align-items-center justify-content-between">
+                            <input type="text" placeholder="ex: 18;19;29">
+                            <small>digite as idades separadas por ponto e virgula</small>
+                        </div>
+
+                        <hr>
+                        <button class="btn btn-lg btn-success">Validar</button>
+                    </section>
+
+                    <section class="questao3">
+                        <div class="d-md-flex flex-md-row align-items-center justify-content-between">
+
+                            <h1 class="bd-title">Questão 3</h1>
+                        </div>
+                        <p class="bd-lead">Escrever um programa em Javascript que leia o código do item pedido, a quantidade e calcule
+o valor a ser pago por aquele lanche. Considere que a cada execução somente será calculado
+um item.
+OBS: Deve-se criar os <inputs> para lê os valores do código do item e a quantidade. O
+resultado deve ser exibido na própria página</p>
+
+                        <div class="d-md-flex flex-md-row align-items-center justify-content-between">
+                            <select name="cardapio" id="cardapio">
+                                <option selected>Selecione um item</option>
+                                <option value="100">Cachorro quente</option>
+                                <option value="101">Bauru simples</option>
+                                <option value="102">Bauru com ovo</option>
+                                <option value="103">Hambúrguer</option>
+                                <option value="104">Cheeseburguer</option>
+                                <option value="105">Refrigerante</option>
+                            </select>
+                            <input type="number" placeholder="digite a quantidade">
+                            <span class="resultado"></span>
+
+                        </div>
+
+                        <hr>
+                        <button class="btn btn-lg btn-success">Calcular</button>
+                    </section>
+
+                    <section class="questao4">
+                        <div class="d-md-flex flex-md-row align-items-center justify-content-between">
+
+                            <h1 class="bd-title">Questão 4</h1>
+                        </div>
+                        <p class="bd-lead">Faça um script que receba uma data no formato “dd/mm/aaaa” e escreva a
+                        data por extenso. Dica: use a função “split” de uma string que quebra a string
+                        em pedaços dado um separador como argumento da função. Nesse caso, o
+                        separador é a barra (/) da data. Exemplo: Para a entrada “22/04/2019” deve ser
+                        escrito “22 de abril de 2019”. (Obs.: não necessita de laço de repetição)</p>
+
+                        <div class="d-md-flex flex-md-row align-items-center justify-content-between">
+                        <input type="text" placeholder="ex: 22/04/2019">
+                        <span class="resultado"></span>
+
+                            <small>digite a data para conversão</small>
+                        </div>
+
+                        <hr>
+                        <button class="btn btn-lg btn-success">Calcular</button>
+                    </section>
+
+
+                     <section class="questao5">
+                        <div class="d-md-flex flex-md-row align-items-center justify-content-between">
+
+                            <h1 class="bd-title">Questão 5</h1>
+                        </div>
+                        <p class="bd-lead">Desenvolva o formulário com as seguintes ações a serem implementadas: <br /> Ao clicar no botão [Calcular] deve ser
+                        gerada uma mensagem com as
+                        informações de nome do cliente, e
+                        qual a bebidas que ele consumiu e
+                        quais doces e salgados consumiu.
+                        Informar também o valor a pagar. Os
+                        produtos têm os seguintes valores:
+                        Suco (4.00), Refrigerante (2.50), Água
+                        (1.5), Bolo (3.50), Pastel (3.00) e Torta
+                        (4.00). </p>
+
+                        <div class="d-md-flex flex-md-row align-items-center justify-content-between">
+                            <div class="form-group">
+                                <span class="label">Nome</span>
+                                <input type="text">
+                            </div>
+                            <div class="form-group">
+                                <span class="label">Bebidas</span>
+                                <select name="sucos" id="sucos">
+                                    <option selected>Selecione um item</option>
+                                    <option value="1">Suco</option>
+                                    <option value="2">Refrigerante</option>
+                                    <option value="3">Agua</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <span class="label">Doces e Salgadso</span>
+                                <select name="doces_salgados" id="doces_salgados">
+                                    <option selected>Selecione um item</option>
+                                    <option value="4">Bolo</option>
+                                    <option value="5">Pastel</option>
+                                    <option value="6">Torta</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <span class="resultado"></span>
+                            </div>
+
+                        </div>
+
+                        <hr>
+                        <button class="btn btn-lg btn-success">Calcular</button>
+                    </section>
+
+                </main>
+            </div>
+        </div>
+        <script>
+            window.app = (function (w) {
+                return {
+                    init: function() {
+                        this.questaoUm();
+                        this.questaoDois();
+                        this.questaoTres();
+                        this.questaoQuatro();
+                        this.questaoCinco();
+                    },
+                    questaoUm: function () {
+                        let calculaValorAoQuadrado = this.utils.calculaValorAoQuadrado;
+
+                        this.utils.addEventoEAcao('.questao1 button', 'onclick', function (evento, )  {
+                            document.querySelectorAll('.questao1 .wrap input').forEach(function (el, i) {
+                                if (el.value.length > 0)
+                                el.value = calculaValorAoQuadrado(new Number(el.value));
+                            });
+                        });
+                    },
+                    questaoDois: function () {
+                        this.utils.addEventoEAcao('.questao2 button', 'onclick', function (evento )  {
+                            let maiorDezoito = 0, menorDezoito = 0,
+                            input = document.querySelector('.questao2 input'),
+                            idades = input.value.split(';');
+
+                            if (idades.length == 0) {
+                                alert('Por favor digite separando por ; (ponto-e-vircula)');
+                            }
+
+                            idades.forEach(function (idade) {
+                                if (idade >= 18) {
+                                    maiorDezoito++;
+                                }
+
+                                if (idade < 18) {
+                                    menorDezoito++;
+                                }
+                            });
+
+                            alert(maiorDezoito + ' pessoas são maiores de idade ' + menorDezoito + ' pessoas menores de idade')
+
+                        });
+                    },
+                    questaoTres: function () {
+                        let itensCardapio = this.utils.itensCardapio();
+
+                        this.utils.addEventoEAcao('.questao3 button', 'onclick', function (evento )  {
+                         let $cardapio = document.querySelector('#cardapio');
+                        if ($cardapio.value === 'Selecione um item') {
+                            alert("Por favor selecione um item do cardapio");
+                            return false;
+                        }
+
+                        let $input = document.querySelector('.questao3 input');
+                        if ($input.value === '' || $input.value.length == 0) {
+                            alert("Por favor digite uma quantidade");
+                            return false;
+                        }
+                        let valorUnit = itensCardapio.get($cardapio.value);
+                        document.querySelector('.questao3 .resultado').innerHTML = 'o valor total R$ ' + (valorUnit * $input.value).toFixed(2);
+
+                    });
+                    },
+                     questaoQuatro: function () {
+                        let itensAno = this.utils.itensAno();
+
+                        this.utils.addEventoEAcao('.questao4 button', 'onclick', function (evento )  {
+                            let $input = document.querySelector('.questao4 input');
+                            if ($input.value === '' || $input.value.length == 0) {
+                                alert("Por favor digite uma data");
+                                return false;
+                            }
+
+
+                            let dataArray = $input.value.split('/');
+                            if (dataArray.length == 1) {
+                                 alert("Por favor digite uma data no formto dd/mm/aaaa");
+                                 return false;
+                            }
+
+                            let mes = itensAno.get(dataArray[1]);
+
+                            document.querySelector('.questao4 .resultado').innerHTML = dataArray[0] + ' de ' + mes + ' de ' + dataArray[2];
+                        });
+                    },
+                     questaoCinco: function () {
+                        let itensCardapioDiverso = this.utils.itensCardapioDiverso();
+
+                        this.utils.addEventoEAcao('.questao5 button', 'onclick', function (evento )  {
+                         let $sucos = document.querySelector('#sucos'),
+                         $salgadosBolos = document.querySelector('#doces_salgados');
+
+                        if ($sucos.value === 'Selecione um item' || $salgadosBolos.value === 'Selecione um item') {
+                            alert("Por favor selecione pelo menos uma bebida e um salgado/doce");
+                            return false;
+                        }
+
+                        let $inputNome = document.querySelector('.questao5 input');
+                        if ($inputNome.value === '' || $inputNome.value.length == 0) {
+                            alert("Por favor digite o nome do cliente");
+                            return false;
+                        }
+
+                        let valorUnitSuco = itensCardapioDiverso.get($sucos.value),
+                        valorUnitSalgadosBolos = itensCardapioDiverso.get($salgadosBolos.value);
+
+                        document.querySelector('.questao5 .resultado').innerHTML = 'O cliente ' + $inputNome.value + ' consumiu uma <strong>Bebida: ' +
+                        $sucos.selectedOptions[0].innerHTML + '</strong> e um <strong>Doce/Salgado: ' + $salgadosBolos.selectedOptions[0].innerHTML + '</strong> valor total: R$' +
+                        (valorUnitSuco + valorUnitSuco).toFixed(2);
+
+                    });
+                    },
+                    utils: {
+                        calculaValorAoQuadrado: function(numero) { return numero * numero },
+                        addEventoEAcao: function(seletor, evento, acao) {
+                            document.querySelector(seletor)[evento] = acao;
+                        },
+                        itensCardapio: function () {
+                                let cardapio = new Map();
+                                cardapio.set('100', 1.20);
+                                cardapio.set('101', 1.30);
+                                cardapio.set('102', 1.50);
+                                cardapio.set('103', 1.20);
+                                cardapio.set('104', 1.30);
+                                cardapio.set('105', 1.00);
+                            return cardapio;
+                        },
+                        itensCardapioDiverso: function () {
+                             let cardapio = new Map();
+                                cardapio.set('1', 4.00);
+                                cardapio.set('2', 2.50);
+                                cardapio.set('3', 1.50);
+                                cardapio.set('4', 3.50);
+                                cardapio.set('5', 3.00);
+                                cardapio.set('6', 4.00);
+                            return cardapio;
+                        },
+                        itensAno: function () {
+                            let ano = new Map();
+                            ano.set('01', 'Janeiro');
+                            ano.set('1', 'Janeiro');
+                            ano.set('02', 'Fevereiro');
+                            ano.set('2', 'Fevereiro');
+                            ano.set('03', 'Março');
+                            ano.set('3', 'Março');
+                            ano.set('04', 'Abril');
+                            ano.set('4', 'Abril');
+                            ano.set('05', 'Maio');
+                            ano.set('5', 'Maio');
+                            ano.set('06', 'Junho');
+                            ano.set('6', 'Junho');
+                            ano.set('07', 'Julho');
+                            ano.set('7', 'Julho');
+                            ano.set('08', 'Agosto');
+                            ano.set('8', 'Agosto');
+                            ano.set('09', 'Setembro');
+                            ano.set('9', 'Setembro');
+                            ano.set('10', 'Outubro');
+                            ano.set('11', 'Novembro');
+                            ano.set('12', 'Dezembro');
+                            return ano;
+                        }
+                    }
+                }
+            })(window)
+
+            window.onload = (e) => {
+                app.init();
+            }
+        </script>
+    </body>
+</html>
